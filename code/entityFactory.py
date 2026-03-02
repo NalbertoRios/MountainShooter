@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 import random
 
-from code import background
 from code.background import Background
 from code.const import WIN_WIDTH, WIN_HEIGHT
 from code.enemy import Enemy
@@ -12,7 +11,7 @@ from code.player import Player
 class EntityFactory:
 
     @staticmethod
-    def get_entity(entity_name: str, position: tuple = (0, 0)):
+    def get_entity(entity_name: str):
         match entity_name:
             case 'Level1Bg':
                 list_bg = []
